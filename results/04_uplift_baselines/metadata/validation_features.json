@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "split": "validation",
+  "customers": 40008,
+  "rows_scanned": 45786568,
+  "purchase_lines": 4583411,
+  "orders": 807026,
+  "reference_date": "2019-03-19",
+  "thresholds": {
+    "frequency_q75": 27,
+    "monetary_cents_q75": 1110559,
+    "recency_q25": 2,
+    "recency_q75": 10
+  },
+  "split_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0"
+}

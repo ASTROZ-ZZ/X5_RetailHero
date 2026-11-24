@@ -1,0 +1,68 @@
+{
+  "locked_at_utc": "2026-11-24T04:45:53.256694+00:00",
+  "fit_split": "train",
+  "evaluation_split": "holdout",
+  "candidate": "t_logistic",
+  "comparators": [
+    "random",
+    "rfm"
+  ],
+  "reach_pct": 30,
+  "selected_count": 12002,
+  "seed": 20261116,
+  "tie_break": "client_id ascending",
+  "model": {
+    "training_customers": 120022,
+    "validation_customers": 40008,
+    "seed": 20261116,
+    "split_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0",
+    "candidate": "t_logistic",
+    "highest_validation_at30": "t_logistic",
+    "trained_model_candidates": [
+      "s_logistic",
+      "t_logistic",
+      "t_hist_gradient"
+    ],
+    "numeric_features": [
+      "frequency",
+      "recency_days",
+      "monetary",
+      "avg_order_value",
+      "purchase_days",
+      "median_repurchase_gap_days",
+      "top_level_2_line_share",
+      "distinct_known_level_2"
+    ],
+    "categorical_features": [
+      "top_level_2_by_lines"
+    ],
+    "encoded_feature_count": 45,
+    "tree_parameters": {
+      "max_iter": 120,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 12,
+      "min_samples_leaf": 300,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 20261116
+    },
+    "logistic_C": 1.0,
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1"
+  },
+  "decision_rule": "Recommend candidate only if both paired two-sided 95% interval lower bounds are above zero",
+  "primary_metric": "Top 30% SMS purchase rate minus control purchase rate",
+  "uncertainty": "Unpooled normal approximation; paired fixed-list intervals accounting for overlap",
+  "sha256": {
+    "scripts/04_uplift_baselines.py": "0574fa36286be307f17800a312b01065fcf3e2a631f180e8b885c9ddf1867e32",
+    "scripts/04_build_validation_features.py": "d46d52861ccebd1eae14229bcf12597e56e8c6ddce65ae85e47a379f1637e823",
+    "scripts/02_customer_analysis.py": "e2b4f85c431f5cc322439f1c2fccbb959c3fdaec88ee6bec8b0d244e9c576696",
+    "results/01_data_audit/splits/split_assignments.csv": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0",
+    "results/02_customer_analysis/metadata/analysis_summary.json": "0b2e55b00b2801509ab9bfbddf9deb6872072f448c02ebc5ed2e49b2f2749d8b",
+    "results/02_customer_analysis/tables/customer_features.csv": "793e5a53a721ca359de7b4cd6c0a2b5e4a276d6c92193e2bd0a835d25ccc1dd0",
+    "results/04_uplift_baselines/metadata/baseline_summary.json": "cce4c4d0930dbfde557d2d0a664fd1f68f17ad404191e1746cc2792451aae089",
+    "results/04_uplift_baselines/tables/validation_features.csv": "59a7a9b0af02306320f67c16d089e9fd3750bf094db5f526a21390e45ee1a484",
+    "results/04_uplift_baselines/tables/validation_scores.csv.gz": "616479a7ec23a8485d166e230ccd7a959e167cbb227014663f195fac4e6a66e1"
+  }
+}

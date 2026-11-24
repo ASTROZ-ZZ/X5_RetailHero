@@ -1,0 +1,39 @@
+{
+  "split": "train",
+  "customers": 120022,
+  "overall": {
+    "segment": "整体",
+    "control_n": 60034,
+    "sms_n": 59988,
+    "control_buyers": 36217,
+    "sms_buyers": 38183,
+    "control_rate": 0.6032748109404671,
+    "sms_rate": 0.6365106354604254,
+    "difference_pp": 3.3235824519958324,
+    "standard_error_pp": 0.28006246210708735,
+    "ci_low_pp": 2.7746701128443276,
+    "ci_high_pp": 3.872494791147337,
+    "p_value": 1.7504644557396312e-32
+  },
+  "high_value_contrast": {
+    "comparison": "高价值待唤醒 − 高价值活跃",
+    "difference_pp": 3.761929233748761,
+    "standard_error_pp": 2.9602720836791674,
+    "ci_low_pp": -2.040097434701746,
+    "ci_high_pp": 9.563955902199268,
+    "p_value": 0.20379794917592584
+  },
+  "omnibus": {
+    "q": 34.170425992068694,
+    "degrees_of_freedom": 4,
+    "p_value": 6.875588897866783e-07
+  },
+  "max_absolute_smd": 0.010945608835794481,
+  "checks": [
+    "fixed_training_population",
+    "one_to_one_join",
+    "binary_treatment_and_outcome",
+    "segment_counts_and_buyers_reconcile",
+    "sufficient_arm_counts"
+  ]
+}

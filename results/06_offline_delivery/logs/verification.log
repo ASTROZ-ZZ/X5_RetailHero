@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scored_customers": 200123,
+  "associated_history_orders": 4020280,
+  "labeled_customers": 200039,
+  "unique_scores": 200111,
+  "sha256": "a0811a69d9d08d327fdae7c3f812eaa72c3269811b13803dc6f587af521d9af4",
+  "checks": [
+    "exact_submission_columns",
+    "exact_official_id_coverage",
+    "unique_ids",
+    "template_order",
+    "finite_and_bounded_scores",
+    "feature_coverage_and_order_count",
+    "labeled_total_and_arm_counts",
+    "official_test_disjoint_from_labeled",
+    "feature_and_submission_fingerprints"
+  ]
+}

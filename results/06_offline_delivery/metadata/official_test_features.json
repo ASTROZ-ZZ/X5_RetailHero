@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "customers": 200123,
+  "rows_scanned": 45786568,
+  "purchase_lines": 22903878,
+  "orders": 4020280,
+  "history_start": "2018-11-21 21:02:33",
+  "history_end": "2019-03-18 23:40:03",
+  "reference_date": "2019-03-19",
+  "thresholds": {
+    "frequency_q75": 27,
+    "monetary_cents_q75": 1110559,
+    "recency_q25": 2,
+    "recency_q75": 10
+  },
+  "split_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0",
+  "official_test_sha256": "55c4bdc210ed71c94fddc4472e8b1ac37dc17d8602ebd48dbc03aaf462e7cf60",
+  "features_sha256": "3950645a194b9ee6479c6a716715201fb5fca30dadc730fb0b6652876e13b464"
+}

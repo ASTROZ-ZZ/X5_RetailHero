@@ -1,0 +1,9 @@
+﻿split,treatment_flg,target,customers
+train,0,0,23817
+train,0,1,36217
+train,1,0,21805
+train,1,1,38183
+validation,0,0,7939
+validation,0,1,12073
+validation,1,0,7268
+validation,1,1,12728

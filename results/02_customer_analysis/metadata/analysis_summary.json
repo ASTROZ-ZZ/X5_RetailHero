@@ -1,0 +1,29 @@
+{
+  "rows_scanned": 45786568,
+  "training_purchase_lines": 13725215,
+  "training_orders": 2411872,
+  "training_purchase_cents": 103384700372,
+  "zero_quantity_lines": 809502,
+  "status": "PASS",
+  "history_start": "2018-11-21 21:02:33",
+  "history_end": "2019-03-18 23:40:03",
+  "reference_date": "2019-03-19",
+  "training_customers": 120022,
+  "split_file_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0",
+  "thresholds": {
+    "frequency_q75": 27,
+    "monetary_cents_q75": 1110559,
+    "recency_q25": 2,
+    "recency_q75": 10
+  },
+  "pandas": "2.2.3",
+  "numpy": "2.3.5",
+  "checks": [
+    "fixed_training_population",
+    "orders_unique_and_consistent",
+    "raw_rows_reconciled",
+    "customer_order_count_and_endpoints_match_stage01",
+    "customer_amount_matches_order_amount",
+    "exported_order_count_matches"
+  ]
+}

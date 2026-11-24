@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "customers": 40009,
+  "policies": 3,
+  "selected_each": 12002,
+  "checks": [
+    "fixed_holdout_membership",
+    "score_and_rank_consistency",
+    "arm_and_buyer_counts",
+    "uplift_and_pointwise_intervals",
+    "paired_intervals_and_overlap",
+    "locked_decision_rule",
+    "saved_score_file_fingerprint"
+  ]
+}

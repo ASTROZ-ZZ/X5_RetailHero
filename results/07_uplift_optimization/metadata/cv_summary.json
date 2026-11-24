@@ -1,0 +1,43 @@
+{
+  "customers": 160030,
+  "oof_score_rows": 480090,
+  "best_by_mean_vs_random": "behavior_t",
+  "model_results": {
+    "base_t": {
+      "mean_uplift_pp": 5.207559053638337,
+      "mean_vs_random_pp": 1.8992704217357828,
+      "sd_vs_random_pp": 0.5561137032788636,
+      "min_vs_random_pp": 1.0719568638526398,
+      "max_vs_random_pp": 3.13305616652534,
+      "mean_vs_base_t_pp": 0.0,
+      "folds_positive_vs_random": 15,
+      "folds_positive_vs_base_t": 0,
+      "repeats_positive_vs_base_t": 0
+    },
+    "behavior_t": {
+      "mean_uplift_pp": 5.230639576890381,
+      "mean_vs_random_pp": 1.9223509449878264,
+      "sd_vs_random_pp": 0.6113904461500435,
+      "min_vs_random_pp": 0.8816898187956084,
+      "max_vs_random_pp": 3.3955689796843007,
+      "mean_vs_base_t_pp": 0.023080523252043565,
+      "folds_positive_vs_random": 15,
+      "folds_positive_vs_base_t": 9,
+      "repeats_positive_vs_base_t": 2
+    },
+    "interaction_s": {
+      "mean_uplift_pp": 4.765682002306584,
+      "mean_vs_random_pp": 1.4573933704040298,
+      "sd_vs_random_pp": 1.0102204564231603,
+      "min_vs_random_pp": -0.3661435911072717,
+      "max_vs_random_pp": 3.0999192058909566,
+      "mean_vs_base_t_pp": -0.44187705133175315,
+      "folds_positive_vs_random": 14,
+      "folds_positive_vs_base_t": 4,
+      "repeats_positive_vs_base_t": 0
+    }
+  },
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "scikit_learn": "1.6.1"
+}

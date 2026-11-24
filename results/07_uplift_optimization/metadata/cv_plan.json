@@ -1,0 +1,40 @@
+{
+  "population": [
+    "train",
+    "validation"
+  ],
+  "repeat_seeds": [
+    20261125,
+    20261126,
+    20261127
+  ],
+  "folds": 5,
+  "stratification": "treatment_flg \u00d7 target",
+  "reach_pct": 30,
+  "random_seeds": [
+    20261116,
+    20261117,
+    20261118,
+    20261119,
+    20261120,
+    20261121,
+    20261122,
+    20261123,
+    20261124,
+    20261125,
+    20261126,
+    20261127
+  ],
+  "variants": [
+    "base_t",
+    "behavior_t",
+    "interaction_s"
+  ],
+  "new_features": [
+    "recency_to_gap",
+    "order_change_14d"
+  ],
+  "c": 1.0,
+  "interaction_scale": 0.25,
+  "model_selection": "Highest average fold Uplift@30% difference versus fixed-seed random average"
+}

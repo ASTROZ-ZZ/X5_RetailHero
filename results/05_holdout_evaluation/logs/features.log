@@ -1,0 +1,26 @@
+Scanned 500,000 purchase rows; selected 51,916
+Scanned 5,000,000 purchase rows; selected 508,926
+Scanned 10,000,000 purchase rows; selected 997,002
+Scanned 15,000,000 purchase rows; selected 1,507,783
+Scanned 20,000,000 purchase rows; selected 2,000,678
+Scanned 25,000,000 purchase rows; selected 2,498,923
+Scanned 30,000,000 purchase rows; selected 2,997,550
+Scanned 35,000,000 purchase rows; selected 3,490,648
+Scanned 40,000,000 purchase rows; selected 3,981,976
+Scanned 45,000,000 purchase rows; selected 4,490,153
+{
+  "status": "PASS",
+  "split": "holdout",
+  "customers": 40009,
+  "rows_scanned": 45786568,
+  "purchase_lines": 4574064,
+  "orders": 806051,
+  "reference_date": "2019-03-19",
+  "thresholds": {
+    "frequency_q75": 27,
+    "monetary_cents_q75": 1110559,
+    "recency_q25": 2,
+    "recency_q75": 10
+  },
+  "split_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0"
+}

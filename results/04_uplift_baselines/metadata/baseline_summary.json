@@ -1,0 +1,40 @@
+{
+  "training_customers": 120022,
+  "validation_customers": 40008,
+  "seed": 20261116,
+  "split_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0",
+  "candidate": "t_logistic",
+  "highest_validation_at30": "t_logistic",
+  "trained_model_candidates": [
+    "s_logistic",
+    "t_logistic",
+    "t_hist_gradient"
+  ],
+  "numeric_features": [
+    "frequency",
+    "recency_days",
+    "monetary",
+    "avg_order_value",
+    "purchase_days",
+    "median_repurchase_gap_days",
+    "top_level_2_line_share",
+    "distinct_known_level_2"
+  ],
+  "categorical_features": [
+    "top_level_2_by_lines"
+  ],
+  "encoded_feature_count": 45,
+  "tree_parameters": {
+    "max_iter": 120,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 12,
+    "min_samples_leaf": 300,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 20261116
+  },
+  "logistic_C": 1.0,
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "scikit_learn": "1.6.1"
+}

@@ -1,0 +1,406 @@
+{
+  "generated_utc": "2026-11-16T09:29:07.934653+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "executable": "/Users/astroz/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5",
+  "platform": "macOS-15.0-arm64-arm-64bit",
+  "seed": 20261116,
+  "split_method": "SHA256(seed:client_id) ordered within treatment x target strata; 60/20/20",
+  "chunk_size": 500000,
+  "elapsed_seconds": 314.64,
+  "files": [
+    {
+      "table": "clients",
+      "rows": 400162,
+      "columns": 5,
+      "bytes": 21736219
+    },
+    {
+      "table": "products",
+      "rows": 43038,
+      "columns": 11,
+      "bytes": 3890339
+    },
+    {
+      "table": "uplift_train",
+      "rows": 200039,
+      "columns": 3,
+      "bytes": 3000616
+    },
+    {
+      "table": "uplift_test",
+      "rows": 200123,
+      "columns": 1,
+      "bytes": 2201363
+    },
+    {
+      "table": "uplift_sample_submission",
+      "rows": 200123,
+      "columns": 2,
+      "bytes": 6057851
+    },
+    {
+      "table": "purchases",
+      "rows": 45786568,
+      "columns": 13,
+      "bytes": 4463775504
+    }
+  ],
+  "transactions": 8045229,
+  "multiline_transactions": 6977760,
+  "distinct_purchase_clients": 400162,
+  "distinct_purchase_products": 42530,
+  "history_start": "2018-11-21 21:02:33",
+  "history_end": "2019-03-18 23:40:03",
+  "purchase_rows_duplicates_scope": "within_chunk_only",
+  "checks": [
+    {
+      "check": "clients.duplicate_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "clients.missing_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "clients.duplicate_rows",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "clients.first_issue_date.invalid_date",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "clients.first_redeem_date.invalid_date",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "clients.age.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "products.duplicate_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "products.missing_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "products.duplicate_rows",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "products.netto.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "products.is_own_trademark.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "products.is_alcohol.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_train.duplicate_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_train.missing_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_train.duplicate_rows",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_train.treatment_flg.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_train.target.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_test.duplicate_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_test.missing_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_test.duplicate_rows",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_sample_submission.duplicate_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_sample_submission.missing_key",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_sample_submission.duplicate_rows",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_sample_submission.uplift.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "train_test.client_overlap",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_train.clients_not_found",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_test.clients_not_found",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "submission.client_set_difference",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_train.treatment_flg.invalid_binary",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "uplift_train.target.invalid_binary",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "clients.age.outside_0_100",
+      "issue_count": 1145,
+      "status": "WARNING",
+      "note": "0—100 为分析用筛查阈值，不代表官方清洗规则"
+    },
+    {
+      "check": "purchases.regular_points_received.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.express_points_received.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.regular_points_spent.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.express_points_spent.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.purchase_sum.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.product_quantity.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.trn_sum_from_iss.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.trn_sum_from_red.invalid_number",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.clients_not_found_rows",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.products_not_found_rows",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.invalid_transaction_datetime",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.missing_transaction_id",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "purchases.exact_duplicate_rows_within_chunks",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": "只检查每批内完全重复行；跨批重复行未检查，不能据此声称全量无重复"
+    },
+    {
+      "check": "purchases.nonpositive_product_quantity",
+      "issue_count": 2707278,
+      "status": "WARNING",
+      "note": ""
+    },
+    {
+      "check": "transaction.id_reused_across_customers",
+      "issue_count": 28,
+      "status": "WARNING",
+      "note": "全局交易编号存在跨客户复用；采用客户+交易编号组合键，不删除原始记录"
+    },
+    {
+      "check": "transaction.cached_row_reconciliation",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "transaction.inconsistent_client",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": "全量跨批检查；缺失值另见字段缺失表"
+    },
+    {
+      "check": "transaction.inconsistent_datetime",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": "全量跨批检查；缺失值另见字段缺失表"
+    },
+    {
+      "check": "transaction.inconsistent_store",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": "全量跨批检查；缺失值另见字段缺失表"
+    },
+    {
+      "check": "transaction.inconsistent_purchase_sum",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": "全量跨批检查；缺失值另见字段缺失表"
+    },
+    {
+      "check": "clients.without_purchase_history",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": "保留客户，后续用零行为及缺失标记处理"
+    },
+    {
+      "check": "uplift_train.without_purchase_history",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": "保留客户，后续用零行为及缺失标记处理"
+    },
+    {
+      "check": "uplift_test.without_purchase_history",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": "保留客户，后续用零行为及缺失标记处理"
+    },
+    {
+      "check": "clients.first_redeem_after_history_end",
+      "issue_count": 44953,
+      "status": "WARNING",
+      "note": "历史窗口末日仅为候选截止点，不能据此认定真实触达日"
+    },
+    {
+      "check": "clients.first_issue_after_history_end",
+      "issue_count": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "clients.redeem_before_issue",
+      "issue_count": 536,
+      "status": "WARNING",
+      "note": ""
+    }
+  ],
+  "transaction_key": [
+    "client_id",
+    "transaction_id"
+  ],
+  "audit_execution_note": "全量初查后发现28个全局交易编号跨客户复用，利用完成的交易缓存修复，并再次全量扫描字段、核对交易缓存行数。"
+}

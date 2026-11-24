@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "fixed_training_ids",
+    "overall_and_segment_arm_counts_and_buyers",
+    "purchase_rates_differences_and_intervals",
+    "high_value_contrast_and_interval"
+  ],
+  "customers": 120022,
+  "rows_recomputed": 6
+}

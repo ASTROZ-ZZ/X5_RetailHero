@@ -1,0 +1,56 @@
+fingerprinted clients.csv
+fingerprinted products.csv
+fingerprinted purchases.csv
+fingerprinted uplift_sample_submission.csv
+fingerprinted uplift_test.csv
+fingerprinted uplift_train.csv
+{
+  "status": "PASS",
+  "checks": [
+    "no_blocking_integrity_error",
+    "complete_unique_customer_partition",
+    "official_test_disjoint",
+    "split_counts_reconciled",
+    "split_independent_of_input_order",
+    "monthly_rows_reconciled",
+    "missing_counts_bounded",
+    "dictionary_matches_headers"
+  ],
+  "split_counts": {
+    "holdout": 40009,
+    "train": 120022,
+    "validation": 40008
+  },
+  "input_fingerprints": [
+    {
+      "file": "clients.csv",
+      "bytes": 21736219,
+      "sha256": "0135e7a3dfb2174c0fff4033cc895c070794e3c19bf5a6b2a685f4acde32e7ba"
+    },
+    {
+      "file": "products.csv",
+      "bytes": 3890339,
+      "sha256": "c174d8394d528c463e0fedfa5ba6de20e27f47fb3249a91b3dffda5c98f30f9e"
+    },
+    {
+      "file": "purchases.csv",
+      "bytes": 4463775504,
+      "sha256": "a9e132e3dde95655a0074622bb93af0616b7c4f047e71c4ce7322e2fe6d262c1"
+    },
+    {
+      "file": "uplift_sample_submission.csv",
+      "bytes": 6057851,
+      "sha256": "c9e16b3ee3de1807647b1e9220998218bf93a6ca57a9727de6676b0220d4bc85"
+    },
+    {
+      "file": "uplift_test.csv",
+      "bytes": 2201363,
+      "sha256": "55c4bdc210ed71c94fddc4472e8b1ac37dc17d8602ebd48dbc03aaf462e7cf60"
+    },
+    {
+      "file": "uplift_train.csv",
+      "bytes": 3000616,
+      "sha256": "ae3dc4c17e98426fa4233fa03421328d259b8720e56ad0380b260ca2edd19bd4"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "development_customers": 160030,
+  "checked_folds": 15,
+  "model_fold_metrics": 45,
+  "random_fold_metrics": 180,
+  "checks": [
+    "training_window_counts_against_order_export",
+    "development_only_feature_and_label_coverage",
+    "exactly_one_out_of_fold_score_per_customer_per_repeat",
+    "model_and_random_top30_counts",
+    "fold_uplift_and_mean_candidate"
+  ]
+}

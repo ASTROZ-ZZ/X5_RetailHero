@@ -1,0 +1,29 @@
+Scanned 500,000 purchase rows; selected 252,028
+Scanned 5,000,000 purchase rows; selected 2,490,683
+Scanned 10,000,000 purchase rows; selected 4,970,278
+Scanned 15,000,000 purchase rows; selected 7,455,341
+Scanned 20,000,000 purchase rows; selected 9,929,493
+Scanned 25,000,000 purchase rows; selected 12,467,083
+Scanned 30,000,000 purchase rows; selected 14,974,852
+Scanned 35,000,000 purchase rows; selected 17,488,427
+Scanned 40,000,000 purchase rows; selected 19,999,968
+Scanned 45,000,000 purchase rows; selected 22,502,936
+{
+  "status": "PASS",
+  "customers": 200123,
+  "rows_scanned": 45786568,
+  "purchase_lines": 22903878,
+  "orders": 4020280,
+  "history_start": "2018-11-21 21:02:33",
+  "history_end": "2019-03-18 23:40:03",
+  "reference_date": "2019-03-19",
+  "thresholds": {
+    "frequency_q75": 27,
+    "monetary_cents_q75": 1110559,
+    "recency_q25": 2,
+    "recency_q75": 10
+  },
+  "split_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0",
+  "official_test_sha256": "55c4bdc210ed71c94fddc4472e8b1ac37dc17d8602ebd48dbc03aaf462e7cf60",
+  "features_sha256": "3950645a194b9ee6479c6a716715201fb5fca30dadc730fb0b6652876e13b464"
+}

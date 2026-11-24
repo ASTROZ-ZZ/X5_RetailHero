@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "training_customers": 120022,
+  "orders": 2411872,
+  "purchase_lines": 13725215,
+  "monetary_cents": 103384700372,
+  "split_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0",
+  "checks": [
+    "fixed_split_fingerprint",
+    "unique_order_keys",
+    "customer_order_and_spending_totals",
+    "repurchase_availability",
+    "segment_population",
+    "category_line_reconciliation",
+    "cohort_denominators_and_censoring"
+  ]
+}

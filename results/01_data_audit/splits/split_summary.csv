@@ -1,0 +1,4 @@
+﻿split,customers
+holdout,40009
+train,120022
+validation,40008

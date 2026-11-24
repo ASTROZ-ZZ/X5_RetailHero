@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "validation_customers": 40008,
+  "recomputed_policies": 6,
+  "curve_points": 120,
+  "checks": [
+    "fixed_validation_membership",
+    "saved_scores_reproduce_rankings_and_arm_counts",
+    "uplift_and_intervals",
+    "auuc_and_qini_from_curve",
+    "candidate_selection_and_paired_comparisons"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "archive_format": "tar.gz split into ordered binary parts",
+  "part_limit_bytes": 94371840,
+  "source_files": [
+    {
+      "file": "clients.csv",
+      "bytes": 21736219,
+      "sha256": "0135e7a3dfb2174c0fff4033cc895c070794e3c19bf5a6b2a685f4acde32e7ba"
+    },
+    {
+      "file": "products.csv",
+      "bytes": 3890339,
+      "sha256": "c174d8394d528c463e0fedfa5ba6de20e27f47fb3249a91b3dffda5c98f30f9e"
+    },
+    {
+      "file": "purchases.csv",
+      "bytes": 4463775504,
+      "sha256": "a9e132e3dde95655a0074622bb93af0616b7c4f047e71c4ce7322e2fe6d262c1"
+    },
+    {
+      "file": "uplift_sample_submission.csv",
+      "bytes": 6057851,
+      "sha256": "c9e16b3ee3de1807647b1e9220998218bf93a6ca57a9727de6676b0220d4bc85"
+    },
+    {
+      "file": "uplift_test.csv",
+      "bytes": 2201363,
+      "sha256": "55c4bdc210ed71c94fddc4472e8b1ac37dc17d8602ebd48dbc03aaf462e7cf60"
+    },
+    {
+      "file": "uplift_train.csv",
+      "bytes": 3000616,
+      "sha256": "ae3dc4c17e98426fa4233fa03421328d259b8720e56ad0380b260ca2edd19bd4"
+    }
+  ],
+  "parts": [
+    {
+      "file": "x5_source_data.tar.gz.001.part",
+      "bytes": 94371840,
+      "sha256": "689237ae141b6c6501cd7a35dfd03e5d2d471c2518d464f16ae9d4aa22da5751"
+    },
+    {
+      "file": "x5_source_data.tar.gz.002.part",
+      "bytes": 94371840,
+      "sha256": "1368a16b6c4cbf7db8a667b201759091029855a59ec9525101c641cd4474c9db"
+    },
+    {
+      "file": "x5_source_data.tar.gz.003.part",
+      "bytes": 94371840,
+      "sha256": "5b10291b7781b84ae4c32baf229baa1a2adce8c76ae66e96391a17222efe4fd4"
+    },
+    {
+      "file": "x5_source_data.tar.gz.004.part",
+      "bytes": 94371840,
+      "sha256": "757d22eb27b8248d4d48924048226b12f908b8242b98d1afdbbd45269fbc5853"
+    },
+    {
+      "file": "x5_source_data.tar.gz.005.part",
+      "bytes": 94371840,
+      "sha256": "d1b8de4167eaaa0be4f03f47e7fda08d8b93068c043e588a3baee07de722aa45"
+    },
+    {
+      "file": "x5_source_data.tar.gz.006.part",
+      "bytes": 94371840,
+      "sha256": "22cccc93da07e2f118f1cdcac750b4277253296b1d3837b9e835931feda5caf2"
+    },
+    {
+      "file": "x5_source_data.tar.gz.007.part",
+      "bytes": 56725381,
+      "sha256": "8a99ee8f462e75267ab0324d56cb82f08dd9ee3704b0d0e2909fdbed9fa2feca"
+    }
+  ],
+  "round_trip_sha256_verified": true
+}

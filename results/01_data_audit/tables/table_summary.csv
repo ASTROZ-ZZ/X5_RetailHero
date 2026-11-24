@@ -1,0 +1,7 @@
+﻿table,rows,columns,bytes
+clients,400162,5,21736219
+products,43038,11,3890339
+uplift_train,200039,3,3000616
+uplift_test,200123,1,2201363
+uplift_sample_submission,200123,2,6057851
+purchases,45786568,13,4463775504

@@ -1,0 +1,12 @@
+                                label  uplift_pp  ci_low_pp  ci_high_pp      auuc      qini
+policy                                                                                     
+t_logistic             T-Learner 逻辑回归   6.401132   4.616382    8.185882  5.088262  0.492595
+t_hist_gradient       T-Learner 梯度提升树   4.834805   3.050064    6.619546  4.682117  0.392178
+s_logistic             S-Learner 逻辑回归   4.704411   2.917732    6.491090  3.749689  0.249813
+random                           随机排序   2.950852   1.208270    4.693434  2.743537 -0.102434
+rfm                            RFM 规则   1.842295   0.636761    3.047829  2.270914 -0.351112
+purchase_probability           普通购买概率   1.776132   0.610899    2.941366  2.224250 -0.312742
+    policy           comparator  difference_pp  ci_low_pp  ci_high_pp  overlap_pct
+t_logistic               random       3.450279   1.371277    5.529281    29.678387
+t_logistic                  rfm       4.558837   2.420147    6.697526     1.666389
+t_logistic purchase_probability       4.624999   2.511831    6.738168     2.366272

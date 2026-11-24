@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "development_customers": 160030,
+  "rows_scanned": 45786568,
+  "distinct_orders_28d": 919106,
+  "previous_interval": [
+    "2019-02-19",
+    "2019-03-05"
+  ],
+  "recent_interval": [
+    "2019-03-05",
+    "2019-03-19"
+  ],
+  "interval_end_exclusive": true,
+  "missing_recency_to_gap": 3248,
+  "split_sha256": "e13c3095f256660145ece03cfad9063e069aa467cddb717206cb3449300bd7b0",
+  "behavior_features_sha256": "4aa46323b686ee96c6f872ae2f97452e594bd70c6a2e8ea7022c26dce6188e6c"
+}

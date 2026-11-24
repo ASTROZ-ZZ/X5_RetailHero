@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "candidate": "t_logistic",
+  "labeled_customers": 200039,
+  "labeled_control": 100058,
+  "labeled_sms": 99981,
+  "scored_customers": 200123,
+  "encoded_feature_count": 49,
+  "order": "uplift_sample_submission.csv client_id order",
+  "prediction_sha256": "a0811a69d9d08d327fdae7c3f812eaa72c3269811b13803dc6f587af521d9af4",
+  "evaluation_lock_sha256": "f5c70516f05a107a05c30cdd6e9f4507fa54fed3a5ed22e27317e6ce37a8d92c",
+  "score_range": [
+    -0.22297850802583555,
+    0.1288883729581803
+  ],
+  "holdout_passes_prespecified_rule": false
+}

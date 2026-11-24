@@ -1,0 +1,22 @@
+                     label  reach_pct  selected  sms_n  control_n  sms_buyers  control_buyers  sms_rate  control_rate  uplift_pp  ci_low_pp  ci_high_pp  normalized_gain_pp
+policy                                                                                                                                                                     
+t_logistic  T-Learner 逻辑回归         30     12002   5954       6048        3040            2848  0.510581      0.470899   3.968165   2.180771    5.755559            1.181500
+random                随机排序         30     12002   6083       5919        3842            3521  0.631596      0.594864   3.673225   1.931527    5.414924            1.117379
+rfm                 RFM 规则         30     12002   6002       6000        5239            5154  0.872876      0.859000   1.387571   0.168696    2.606446            0.416472
+    policy comparator  difference_pp  ci_low_pp  ci_high_pp  overlap_pct
+t_logistic     random       0.294940  -1.778442    2.368322    30.144976
+t_logistic        rfm       2.580594   0.430412    4.730777     1.449758
+{
+  "candidate": "t_logistic",
+  "customers": 40009,
+  "reach_pct": 30,
+  "selected_per_policy": 12002,
+  "passes_prespecified_rule": false,
+  "validation_replay_max_abs_score_diff": {
+    "t_logistic": 0.0,
+    "random": 0.0,
+    "rfm": 0.0
+  },
+  "locked_plan_sha256": "f5c70516f05a107a05c30cdd6e9f4507fa54fed3a5ed22e27317e6ce37a8d92c",
+  "score_file_sha256": "e46b6d04ffb95b0331352915a36c3f095ab5e6591698e7802bcb1bbf0571c4ca"
+}

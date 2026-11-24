@@ -1,0 +1,14 @@
+{
+  "candidate": "t_logistic",
+  "customers": 40009,
+  "reach_pct": 30,
+  "selected_per_policy": 12002,
+  "passes_prespecified_rule": false,
+  "validation_replay_max_abs_score_diff": {
+    "t_logistic": 0.0,
+    "random": 0.0,
+    "rfm": 0.0
+  },
+  "locked_plan_sha256": "f5c70516f05a107a05c30cdd6e9f4507fa54fed3a5ed22e27317e6ce37a8d92c",
+  "score_file_sha256": "e46b6d04ffb95b0331352915a36c3f095ab5e6591698e7802bcb1bbf0571c4ca"
+}

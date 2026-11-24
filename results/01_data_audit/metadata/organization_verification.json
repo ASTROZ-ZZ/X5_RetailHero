@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "date": "2026-11-19",
+  "moved_files": 27,
+  "checks": [
+    "moved_files_present",
+    "csv_json_logs_byte_identical",
+    "markdown_local_links_valid",
+    "python_syntax_valid",
+    "all_stage01_output_paths_valid"
+  ],
+  "raw_data_paths_unchanged": true
+}

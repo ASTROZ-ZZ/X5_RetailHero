@@ -1,0 +1,5 @@
+*.csv.gz binary
+*.pdf binary
+*.docx binary
+*.png binary
+/data/backup/*.part binary -delta
