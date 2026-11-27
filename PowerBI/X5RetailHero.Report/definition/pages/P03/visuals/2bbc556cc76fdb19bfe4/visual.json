@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "2bbc556cc76fdb19bfe4",
+  "position": {
+    "x": 30,
+    "y": 65,
+    "width": 1380,
+    "height": 42,
+    "z": 2,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "仅训练客户的历史订单｜日期、门店、客群筛选共同作用于本页所有订单指标；首末月份记录不完整。",
+                    "textStyle": {
+                      "fontFamily": "SimSun",
+                      "fontSize": "12pt",
+                      "color": "#41304F"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

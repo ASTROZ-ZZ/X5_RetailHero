@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "7c867a09932a7952cfc3",
+  "position": {
+    "x": 30,
+    "y": 65,
+    "width": 1380,
+    "height": 42,
+    "z": 2,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "训练样本｜客群与购买近期程度筛选作用于客户指标；Cohort表独立展示完整月份，避免误读窗口边界。",
+                    "textStyle": {
+                      "fontFamily": "SimSun",
+                      "fontSize": "12pt",
+                      "color": "#41304F"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

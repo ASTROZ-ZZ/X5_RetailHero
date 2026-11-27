@@ -1,0 +1,7 @@
+let
+    Encoded = Text.Combine({"H4sIAAAAAAACE3VTS4pTQRTdS8aVx/1/1tJk2PsQpMWRoIg4EATpmeBIzCB+NpOE7l14boMggoFXpO67Vedzz7u52T1+fn8+HS/Pvl+/nh6Oz3ernAqL2cqUXFnUi7amEjIyFVejsimxdlpyMzGLBkqeSZFelslOUSiZepNVZHlkaq49bYKbm8QDV1gAjtHGJm4S5mFpipNc7jijmsTFU5HE1oOkWjgiDusv/pefd5e3948v3uyWuy4PXiqy1HmIlUiWFahKYINSAD/KrLmzAiJtU63uKAALCdjL1lJEoladAllrz5s2+kVVmC3GIaaNEj9v6HGXwWMthWRiG336P/IPv15fP3z84zwzwGdtXlXQ0JJzMuGziLeCeFXmlGCLNJhY15P3umlQGikoCBpjutyNBS4Wejg4IEjSoFpTQSwCGLbhH94bdRA5fIDEkZ82a2AqfbtHWTc0FIkAp8Gspjoizj9e/aMjlGFLUPgKSSzpQ0cLwy0xTmbqmlgBI0izE9x1JOuGPebuGio1aRgdhkiQN2S1M+6WzaGx8KRTOhtkRDJmbIVdZ44jA5PUIogWpna7Z56kYeaC6cBh3NaOMo2My9238+nd5cun68vjbkFmIQBSM2BF8rF261PGLR0CEQrNSXjgPQEDuYI/akCGSCRGCboQnpivxcZdqMjWTDB/CheMZnwfiiadACbCiR1aMRG31RtCqjAID+ywIZujVYqdK5xnQIZqHA6/AexttR3NAwAA"}),
+    Rows = Json.Document(Binary.Decompress(Binary.FromText(Encoded, BinaryEncoding.Base64), Compression.GZip)),
+    Source = Table.FromRows(Rows, {"Segment","control_n","sms_n","control_buyers","sms_buyers","control_rate","sms_rate","difference_pp","standard_error_pp","ci_low_pp","ci_high_pp","p_value","holm_p"}),
+    Typed = Table.TransformColumnTypes(Source, {{"Segment", type text},{"control_n", Int64.Type},{"sms_n", Int64.Type},{"control_buyers", Int64.Type},{"sms_buyers", Int64.Type},{"control_rate", type number},{"sms_rate", type number},{"difference_pp", type number},{"standard_error_pp", type number},{"ci_low_pp", type number},{"ci_high_pp", type number},{"p_value", type number},{"holm_p", type number}}, "en-US")
+in
+    Typed

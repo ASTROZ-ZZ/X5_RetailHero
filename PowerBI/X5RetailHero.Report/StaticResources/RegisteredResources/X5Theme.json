@@ -1,0 +1,31 @@
+{
+  "name": "X5Theme",
+  "dataColors": [
+    "#66439A",
+    "#D6AD2F",
+    "#9272B6",
+    "#A7ACB7",
+    "#41324F"
+  ],
+  "background": "#F7F5FA",
+  "foreground": "#30243F",
+  "tableAccent": "#66439A",
+  "textClasses": {
+    "title": {
+      "fontFace": "SimHei",
+      "fontSize": 15
+    },
+    "header": {
+      "fontFace": "SimHei",
+      "fontSize": 13
+    },
+    "label": {
+      "fontFace": "SimSun",
+      "fontSize": 11
+    },
+    "callout": {
+      "fontFace": "Times New Roman",
+      "fontSize": 30
+    }
+  }
+}

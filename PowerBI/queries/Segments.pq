@@ -1,0 +1,7 @@
+let
+    Encoded = Text.Combine({"H4sIAAAAAAACE1WSTWrUQRDF7zLrpqnvj7OEuYsgEVeCIuJCEMSdkJU4i0n0MjNDcgtfzz+K9qaheFX1q1d1c7N7+vbxdDycX9xfvh8fDy93g5NcRomS9NCwyiKTmTlk4CcI3GWWDmOaIVJqJWxSns/JS0UTIUptV6byjkRIXVpFDaKUcJQwnaruZdaqmb4f/yCdf96e3399evUOVMw2zM18rKrkmTNtsAz16YNDVOeS4BOi0iZge9eWuRERtRSHghJIVisEsXMhKtnQo0dMjnLyiODqsoX0+Ovt5dPnPxYJpurhYixoXdGslD4DzQY3WkVWTcqh4jPVjDnDYE3Zc65tDnWHcGoQO4X2ChVlaxoau6sWxosZ3JKQdHgvmtPDm/+B4GnBCQExduBa7FU94Q5mBwmqwBd0xgZlYi/GsT0wUoZfRTQluuCHhkdJe123uA6AJVGRMMTAHLM3RRp7LKDz7Y/T8cP57svl9WEHC519RGPDscoD3Lim8YBbikZuAjge2o07qr8PvlhigrVRHEu2yDqsoMSG1v1IJ8zshcP45Ho/7VgAY+bo2O9/A/D3kvHTAgAA"}),
+    Rows = Json.Document(Binary.Decompress(Binary.FromText(Encoded, BinaryEncoding.Base64), Compression.GZip)),
+    Source = Table.FromRows(Rows, {"Segment","customers","orders","sales","median_recency_days","median_frequency","median_monetary","median_customer_aov","customers_with_gap","median_customer_gap_days","customer_share","sales_share","order_weighted_aov"}),
+    Typed = Table.TransformColumnTypes(Source, {{"Segment", type text},{"customers", Int64.Type},{"orders", Int64.Type},{"sales", type number},{"median_recency_days", Int64.Type},{"median_frequency", type number},{"median_monetary", type number},{"median_customer_aov", type number},{"customers_with_gap", Int64.Type},{"median_customer_gap_days", type number},{"customer_share", type number},{"sales_share", type number},{"order_weighted_aov", type number}}, "en-US")
+in
+    Typed

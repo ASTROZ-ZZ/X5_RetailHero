@@ -1,0 +1,122 @@
+-- Customers | #,0
+[客户数] = SUM(Customers[Clients])
+
+-- Customers | 0.00
+[历史消费额] = DIVIDE(SUM(Customers[SalesCents]),100)
+
+-- Customers | #,0
+[历史订单数] = SUM(Customers[Orders])
+
+-- Customers | 0.00
+[客单价] = DIVIDE([历史消费额],[历史订单数])
+
+-- Customers | 0.0%
+[客户占比] = DIVIDE([客户数],CALCULATE([客户数],REMOVEFILTERS('Segment')))
+
+-- Customers | 0.0%
+[消费贡献] = DIVIDE([历史消费额],CALCULATE([历史消费额],REMOVEFILTERS('Segment')))
+
+-- Customers | 0.0
+[平均未购买天数] = DIVIDE(SUM(Customers[RecencyTotal]),[客户数])
+
+-- OrdersDaily | #,0
+[订单量] = SUM(OrdersDaily[Orders])
+
+-- OrdersDaily | 0.00
+[消费额] = DIVIDE(SUM(OrdersDaily[SalesCents]),100)
+
+-- OrdersDaily | 0.00
+[平均订单金额] = DIVIDE([消费额],[订单量])
+
+-- OrdersDaily | #,0
+[交易门店数] = DISTINCTCOUNT(OrdersDaily[Store])
+
+-- Experiment | #,0
+[短信组人数] = SUM(Experiment[sms_n])
+
+-- Experiment | #,0
+[对照组人数] = SUM(Experiment[control_n])
+
+-- Experiment | 0.00%
+[短信购买率] = DIVIDE(SUM(Experiment[sms_buyers]),SUM(Experiment[sms_n]))
+
+-- Experiment | 0.00%
+[对照购买率] = DIVIDE(SUM(Experiment[control_buyers]),SUM(Experiment[control_n]))
+
+-- Experiment | +0.00;-0.00;0.00
+[购买率差] = 100*([短信购买率]-[对照购买率])
+
+-- Experiment | +0.00;-0.00;0.00
+[区间下界] = VAR p1=[短信购买率] VAR p0=[对照购买率] VAR n1=[短信组人数] VAR n0=[对照组人数] RETURN IF(n1>0 && n0>0, [购买率差] - 1.95996398454005*100*SQRT(DIVIDE(p1*(1-p1),n1)+DIVIDE(p0*(1-p0),n0)))
+
+-- Experiment | +0.00;-0.00;0.00
+[区间上界] = VAR p1=[短信购买率] VAR p0=[对照购买率] VAR n1=[短信组人数] VAR n0=[对照组人数] RETURN IF(n1>0 && n0>0, [购买率差] + 1.95996398454005*100*SQRT(DIVIDE(p1*(1-p1),n1)+DIVIDE(p0*(1-p0),n0)))
+
+-- ExperimentOverall | #,0
+[短信组人数（总体）] = SUM(ExperimentOverall[sms_n])
+
+-- ExperimentOverall | #,0
+[对照组人数（总体）] = SUM(ExperimentOverall[control_n])
+
+-- ExperimentOverall | 0.00%
+[短信购买率（总体）] = DIVIDE(SUM(ExperimentOverall[sms_buyers]),SUM(ExperimentOverall[sms_n]))
+
+-- ExperimentOverall | 0.00%
+[对照购买率（总体）] = DIVIDE(SUM(ExperimentOverall[control_buyers]),SUM(ExperimentOverall[control_n]))
+
+-- ExperimentOverall | +0.00;-0.00;0.00
+[购买率差（总体）] = 100*([短信购买率（总体）]-[对照购买率（总体）])
+
+-- ExperimentOverall | +0.00;-0.00;0.00
+[区间下界（总体）] = VAR p1=[短信购买率（总体）] VAR p0=[对照购买率（总体）] VAR n1=[短信组人数（总体）] VAR n0=[对照组人数（总体）] RETURN IF(n1>0 && n0>0, [购买率差（总体）] - 1.95996398454005*100*SQRT(DIVIDE(p1*(1-p1),n1)+DIVIDE(p0*(1-p0),n0)))
+
+-- ExperimentOverall | +0.00;-0.00;0.00
+[区间上界（总体）] = VAR p1=[短信购买率（总体）] VAR p0=[对照购买率（总体）] VAR n1=[短信组人数（总体）] VAR n0=[对照组人数（总体）] RETURN IF(n1>0 && n0>0, [购买率差（总体）] + 1.95996398454005*100*SQRT(DIVIDE(p1*(1-p1),n1)+DIVIDE(p0*(1-p0),n0)))
+
+-- Overview | #,0
+[历史客户规模] = MAX(Overview[HistoryClients])
+
+-- Overview | #,0
+[商品明细规模] = MAX(Overview[Lines])
+
+-- Overview | #,0
+[待评客户数] = MAX(Overview[OfficialScores])
+
+-- Policies | +0.00;-0.00;0.00
+[策略购买率差] = SELECTEDVALUE(Policies[uplift_pp])
+
+-- Policies | #,0
+[策略下界] = SELECTEDVALUE(Policies[ci_low_pp])
+
+-- Policies | #,0
+[策略上界] = SELECTEDVALUE(Policies[ci_high_pp])
+
+-- Comparisons | +0.00;-0.00;0.00
+[领先幅度] = SELECTEDVALUE(Comparisons[difference_pp])
+
+-- Comparisons | +0.00;-0.00;0.00
+[领先下界] = SELECTEDVALUE(Comparisons[ci_low_pp])
+
+-- Comparisons | +0.00;-0.00;0.00
+[领先上界] = SELECTEDVALUE(Comparisons[ci_high_pp])
+
+-- Optimization | +0.00;-0.00;0.00
+[平均购买率差] = SELECTEDVALUE(Optimization[mean_uplift_pp])
+
+-- Optimization | +0.00;-0.00;0.00
+[领先随机] = SELECTEDVALUE(Optimization[mean_vs_random_pp])
+
+-- Optimization | +0.00;-0.00;0.00
+[领先原模型] = SELECTEDVALUE(Optimization[mean_vs_base_t_pp])
+
+-- Optimization | #,0
+[胜出折数] = SELECTEDVALUE(Optimization[folds_positive_vs_base_t])
+
+-- Curves | +0.00;-0.00;0.00
+[覆盖购买率差] = SELECTEDVALUE(Curves[uplift_pp])
+
+-- Cohort | 0.0%
+[完整月复购率] = SELECTEDVALUE(Cohort[repeat_rate])
+
+-- Cohort | #,0
+[客群规模] = SELECTEDVALUE(Cohort[cohort_customers])

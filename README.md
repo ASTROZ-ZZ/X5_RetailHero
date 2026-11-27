@@ -8,6 +8,7 @@
 
 - [企业决策报告 PDF](results/reporting/X5_RetailHero_企业决策报告.pdf) · [可编辑 Word 版](results/reporting/X5_RetailHero_企业决策报告.docx)
 - [数据分析作品集](results/reporting/X5_RetailHero_数据分析作品集.pdf)
+- [经营分析数据看板](results/reporting/X5_RetailHero_经营分析数据看板.html) · [Power BI 项目与使用说明](PowerBI/README.md)
 - [六张原始数据的完整分卷备份与还原方法](data/backup/README.md)
 
 - [任务需求](docs/任务需求.md)：目标、评分与交付要求。

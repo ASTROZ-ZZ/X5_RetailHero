@@ -1,0 +1,7 @@
+let
+    Encoded = Text.Combine({"H4sIAAAAAAACE4WVS2pUYRSEtxIy/gPn/ViLZC8BiTgSfCAOBEEyEcGRmEF87EXSIdmFddOJdDr33sy6ac5H/XWqTj97dnj569X1n9dXHz9dfb+4Pn9+OA6FuI6Y8Yn0gOnvyVvpzdmXw8FqHYOry3yUa4SXEQ9u7+7jsQyTGRh3AkbRLcOVSUKddXCGhizC+ohmlClRQViVjlZPUi0eZqa1BppRJZY8qk2HZQiXBg9t1lzj6MzrTG99scEiaS4+GeftE2dz+uPy4v3m2+erl+cP/ZYDBeNOilbWsOD0nFBRsD2iQWyrXgTJPohNDO5kRsqowJeEnBxFSTaPuXd5F6PqPVQCjrCLOmkVxFRYLUIeaREzGBFtcBmKygVCWFVlkaGP3oPUDWTEh7C3Ys2QQfg4IZazzAf4Te6C3DYhwgXGYM2VhMxgWXA2FjGyh4lbX6lTemA1MKTbC/FhnWfc27orJZFcRJ+nLgjcbSOabKJFxL4MdprCpUEjg2XaMAhY7iJB9wjuOpTRQ1grwSjgyLyN6s3XD5cX55uTn5vfp5t3Zzcv3qwdiMYytXM6CdnRIAKMuG5jtsKauw9YDTJm6AFMSU5sJ5nXQPO3Ac46nqamxu4Cb/UJyIwaPIMnPd3ZPrbL+U94Im1NiZES48ZayNwJh2AyRrb3aRW0m3xPHBRB1JAy3E8Fk1zwpECF1kiPIrOVhBqgQyWJWyzIkHk+SdnVE/g7mIYdjUJoyLkJQYrlV800QHCVYAUOGwDWkl1DXZ9E7AqZRjCJ/jbBYqzbJNYIj6qMxmjijjCCRoxO7uV/bv7BUYJ8n4TjLkXFqFwb3y8gwqA0vNyEENXj43/eg7ubmQcAAA=="}),
+    Rows = Json.Document(Binary.Decompress(Binary.FromText(Encoded, BinaryEncoding.Base64), Compression.GZip)),
+    Source = Table.FromRows(Rows, {"Segment","CohortMonth","RecencyBand","Clients","Orders","SalesCents","RecencyTotal"}),
+    Typed = Table.TransformColumnTypes(Source, {{"Segment", type text},{"CohortMonth", type text},{"RecencyBand", type text},{"Clients", Int64.Type},{"Orders", Int64.Type},{"SalesCents", Int64.Type},{"RecencyTotal", Int64.Type}}, "en-US")
+in
+    Typed

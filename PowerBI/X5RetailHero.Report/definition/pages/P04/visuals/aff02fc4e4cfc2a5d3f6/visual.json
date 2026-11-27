@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "aff02fc4e4cfc2a5d3f6",
+  "position": {
+    "x": 30,
+    "y": 65,
+    "width": 1380,
+    "height": 42,
+    "z": 2,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "训练样本｜按客群查看短信组与对照组；购买率和区间由当前选中客群的分子、分母重新计算。",
+                    "textStyle": {
+                      "fontFamily": "SimSun",
+                      "fontSize": "12pt",
+                      "color": "#41304F"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

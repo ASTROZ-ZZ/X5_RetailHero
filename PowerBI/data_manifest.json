@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "training_customers": 120022,
+  "orders": 2411872,
+  "sales_cents": 103384700372,
+  "aggregate_rows": 1754931,
+  "scope": "fixed training customers only; model metrics retain their own evaluation population",
+  "source_files": {
+    "02_customer_analysis/tables/customer_features.csv": "793e5a53a721ca359de7b4cd6c0a2b5e4a276d6c92193e2bd0a835d25ccc1dd0",
+    "02_customer_analysis/tables/training_orders.csv.gz": "3f33285bf9fc11a3e579f2e801f246e4b7bd6559cd0a05ca588a3a9315358bac",
+    "03_sms_experiment/tables/purchase_rate_effects.csv": "77870bb07e7672bfb3423a592c3c6f9050681db1fc12018d4684ae11a01e6d40",
+    "04_uplift_baselines/tables/validation_at30.csv": "cd76cc78fcba20bd778c5b37ec080dcd5f384a2075d6212e3f55d53c5ea091e4",
+    "05_holdout_evaluation/tables/holdout_at30.csv": "8b6d0bbb8f33fd5c50a33ef1d68bfec50c08450f4168b3f60d0578038d680c6c",
+    "07_uplift_optimization/tables/model_summary.csv": "7713bb742b56705a4d8cc401896cd2147aaa80739c439fd99d334c8cc845e67d"
+  },
+  "files": {
+    "Cohort.csv": {
+      "sha256": "80e9385f4340420ad88fe3cc9bea9010e81fa0b1ceaac9f2c26aa72ff47ebd8f",
+      "bytes": 1515
+    },
+    "Comparisons.csv": {
+      "sha256": "ef1be385dd44c8b4379bcc39760fe673415b042a17a5ea4854538a63fdbfeaf8",
+      "bytes": 606
+    },
+    "Curves.csv": {
+      "sha256": "04455044fff8c7583e9282e838a578dc52101f6aacc7d5abeb4362fc5bf4b93d",
+      "bytes": 18499
+    },
+    "Customers.csv": {
+      "sha256": "8478b85a7c16a69630533cf626909c5339823453341ccc5449021cce8f7586b4",
+      "bytes": 1794
+    },
+    "Dates.csv": {
+      "sha256": "0ba695430fcd409912ba43df01134490945561b7005cde882b48093259da4246",
+      "bytes": 1306
+    },
+    "Experiment.csv": {
+      "sha256": "a731f8025cf221e48e0820602cba6f79bca0f0e58ba03c0ada0885d8db669d4d",
+      "bytes": 1095
+    },
+    "ExperimentOverall.csv": {
+      "sha256": "cbbe56e9a9a9fdb47cb73b34e3fd0cd209e8ee6c949e34527f63854f51a0f901",
+      "bytes": 311
+    },
+    "Optimization.csv": {
+      "sha256": "6c2b9f4b29e65ec7170f380fe97629653b173c61460ad603747931e7cc0c42d3",
+      "bytes": 564
+    },
+    "OrdersDaily.csv": {
+      "sha256": "a94de5af5da27018fd7505c7f98430ba37467df43182474305f78f84006979ae",
+      "bytes": 78227315
+    },
+    "Overview.csv": {
+      "sha256": "0e08628a5344562733f7cd308a2b8bac2ce75a86252e8ad4a0c45430e179c17a",
+      "bytes": 126
+    },
+    "Policies.csv": {
+      "sha256": "a449e651d0e5c60c9004ffa38373fcd6075c18f593a78800d43f6564afdbc555",
+      "bytes": 2018
+    },
+    "Repeats.csv": {
+      "sha256": "16c0f1cf0cd0b10bd2360985cccd70d5881a98b237c07cb39ad82e3cc1dd0d0d",
+      "bytes": 628
+    },
+    "Sample.csv": {
+      "sha256": "5597251627f9e1c7f9c8d2807f560174711656dc3b4a6992510b46ed17fef825",
+      "bytes": 36
+    },
+    "Segment.csv": {
+      "sha256": "530cd694e8c5c65dcf3931aaf5ead2ba176fcdd645eb36fd947ec3db576d77dd",
+      "bytes": 88
+    },
+    "Segments.csv": {
+      "sha256": "a493c0d5543782778e8a291ad53964a7e831202fbc9fcc246cb2dd5f5e66a80f",
+      "bytes": 909
+    },
+    "Stores.csv": {
+      "sha256": "4dd169860609699bb88a93b346497c59b449ac0b1081ca65f9fc5b755c2a2cb5",
+      "bytes": 152590
+    }
+  }
+}

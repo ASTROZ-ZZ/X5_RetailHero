@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "2e4e8b94da97f5b25fe9",
+  "position": {
+    "x": 30,
+    "y": 65,
+    "width": 1380,
+    "height": 42,
+    "z": 2,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "公开历史数据研究｜客户行为基于120,022名训练客户；实验与策略页面标明各自样本范围。",
+                    "textStyle": {
+                      "fontFamily": "SimSun",
+                      "fontSize": "12pt",
+                      "color": "#41304F"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

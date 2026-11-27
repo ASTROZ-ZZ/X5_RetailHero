@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "c80e4373d45191d5302c",
+  "position": {
+    "x": 840,
+    "y": 500,
+    "width": 570,
+    "height": 270,
+    "z": 7,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'开发集3次×5折 · 优化结果 / pp'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimHei'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Optimization"
+                    }
+                  },
+                  "Property": "model"
+                }
+              },
+              "queryRef": "Optimization.model",
+              "nativeQueryRef": "model",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Optimization"
+                    }
+                  },
+                  "Property": "平均购买率差"
+                }
+              },
+              "queryRef": "Optimization.平均购买率差",
+              "nativeQueryRef": "平均购买率差",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Optimization"
+                    }
+                  },
+                  "Property": "领先原模型"
+                }
+              },
+              "queryRef": "Optimization.领先原模型",
+              "nativeQueryRef": "领先原模型",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Optimization"
+                    }
+                  },
+                  "Property": "胜出折数"
+                }
+              },
+              "queryRef": "Optimization.胜出折数",
+              "nativeQueryRef": "胜出折数",
+              "active": true
+            }
+          ]
+        }
+      }
+    }
+  }
+}

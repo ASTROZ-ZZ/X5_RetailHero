@@ -1,0 +1,2 @@
+﻿Segment,control_n,sms_n,control_buyers,sms_buyers,control_rate,sms_rate,difference_pp,standard_error_pp,ci_low_pp,ci_high_pp,p_value,holm_p
+整体,60034,59988,36217,38183,0.6032748109404671,0.6365106354604254,3.3235824519958324,0.2800624621070873,2.7746701128443276,3.872494791147337,1.7504644557396312e-32,

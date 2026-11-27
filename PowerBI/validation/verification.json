@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "official_schema_documents": 62,
+  "semantic_tables": 16,
+  "native_pages": 5,
+  "native_visuals": 51,
+  "train_orders": 2411872,
+  "sales_cents": 103384700372,
+  "holdout_vs_random_pp": 0.294939648278719,
+  "holdout_vs_random_ci_pp": [
+    -1.7784422899409562,
+    2.368321586498394
+  ]
+}

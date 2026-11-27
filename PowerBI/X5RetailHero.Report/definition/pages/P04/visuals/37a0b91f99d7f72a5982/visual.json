@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "37a0b91f99d7f72a5982",
+  "position": {
+    "x": 40,
+    "y": 715,
+    "width": 1320,
+    "height": 120,
+    "z": 10,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "业务解读：高历史消费不等于更高短信增量。高价值活跃客群的区间跨零，不应仅按历史价值扩大短信触达。\n当前为历史组间比较，因果解释依赖可靠的实验分配和一致的统计窗口；已检查特征相近不能单独证明随机分配。",
+                    "textStyle": {
+                      "fontFamily": "SimHei",
+                      "fontSize": "17pt",
+                      "color": "#41304F"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "b2b5518b607684c7a1b0",
+  "position": {
+    "x": 30,
+    "y": 65,
+    "width": 1380,
+    "height": 42,
+    "z": 2,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "固定30%覆盖比例比较｜评估阶段筛选只作用于策略对照表；覆盖曲线固定为验证集，优化固定为开发集。",
+                    "textStyle": {
+                      "fontFamily": "SimSun",
+                      "fontSize": "12pt",
+                      "color": "#41304F"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

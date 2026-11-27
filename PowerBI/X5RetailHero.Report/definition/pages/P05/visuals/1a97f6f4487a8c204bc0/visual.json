@@ -1,0 +1,166 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "1a97f6f4487a8c204bc0",
+  "position": {
+    "x": 30,
+    "y": 220,
+    "width": 790,
+    "height": 260,
+    "z": 4,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'策略效果及95%区间 / pp'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimHei'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sample"
+                    }
+                  },
+                  "Property": "Sample"
+                }
+              },
+              "queryRef": "Sample.Sample",
+              "nativeQueryRef": "Sample",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Policies"
+                    }
+                  },
+                  "Property": "label"
+                }
+              },
+              "queryRef": "Policies.label",
+              "nativeQueryRef": "label",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Policies"
+                    }
+                  },
+                  "Property": "策略购买率差"
+                }
+              },
+              "queryRef": "Policies.策略购买率差",
+              "nativeQueryRef": "策略购买率差",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Policies"
+                    }
+                  },
+                  "Property": "策略下界"
+                }
+              },
+              "queryRef": "Policies.策略下界",
+              "nativeQueryRef": "策略下界",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Policies"
+                    }
+                  },
+                  "Property": "策略上界"
+                }
+              },
+              "queryRef": "Policies.策略上界",
+              "nativeQueryRef": "策略上界",
+              "active": true
+            }
+          ]
+        }
+      }
+    }
+  }
+}

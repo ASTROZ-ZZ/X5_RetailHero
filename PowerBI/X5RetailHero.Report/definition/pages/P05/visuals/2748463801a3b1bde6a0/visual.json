@@ -1,0 +1,166 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "2748463801a3b1bde6a0",
+  "position": {
+    "x": 840,
+    "y": 220,
+    "width": 570,
+    "height": 260,
+    "z": 5,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'候选相对基线 / pp'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SimHei'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Comparisons"
+                    }
+                  },
+                  "Property": "Sample"
+                }
+              },
+              "queryRef": "Comparisons.Sample",
+              "nativeQueryRef": "Sample",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Comparisons"
+                    }
+                  },
+                  "Property": "comparator"
+                }
+              },
+              "queryRef": "Comparisons.comparator",
+              "nativeQueryRef": "comparator",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Comparisons"
+                    }
+                  },
+                  "Property": "领先幅度"
+                }
+              },
+              "queryRef": "Comparisons.领先幅度",
+              "nativeQueryRef": "领先幅度",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Comparisons"
+                    }
+                  },
+                  "Property": "领先下界"
+                }
+              },
+              "queryRef": "Comparisons.领先下界",
+              "nativeQueryRef": "领先下界",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Comparisons"
+                    }
+                  },
+                  "Property": "领先上界"
+                }
+              },
+              "queryRef": "Comparisons.领先上界",
+              "nativeQueryRef": "领先上界",
+              "active": true
+            }
+          ]
+        }
+      }
+    }
+  }
+}
